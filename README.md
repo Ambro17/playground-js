@@ -17,3 +17,9 @@ docker run -it -p 4040:4040 --init \
 npm install
 node app.js
 ```
+
+You can edit the Graphql API by setting `GRAPHQL_API_ENDPOINT` to an url that accepts Graphql Post requests.
+Some public schema urls can be found [here](https://github.com/APIs-guru/graphql-apis) or you can develop your own server
+with your preferred stack. To setup just
+`export GRAPHQL_API_ENDPOINT=https://spotify-graphql-server.herokuapp.com/graphql?`
+and run locally with npm or pass the env var to docker as per the above example
